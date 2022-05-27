@@ -2,7 +2,7 @@ import React from 'react'
 import Contacts from '../Contacts';
 import Form from '../Form';
 
-function Home({formSubmition,contacts,deleteContact}) {
+function Home({formSubmition,contacts,deleteContact,favouriteContacts}) {
 
   return (
 
@@ -12,8 +12,9 @@ function Home({formSubmition,contacts,deleteContact}) {
      </fieldset>
      <div style={{display:'flex',marginBottom:'10px',flexWrap:'wrap'}}>
     {contacts.map((value)=>{
-      return <Contacts key={value.id} values={value} deleteContact={deleteContact}/>
+      return <Contacts key={value.id} values={value} deleteContact={deleteContact} favouriteContacts={favouriteContacts}/>
     })}
+    {contacts.length === 0 && <h3>No More Contacts</h3>}
     </div>
      
    
