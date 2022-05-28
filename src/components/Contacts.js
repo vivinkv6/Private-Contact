@@ -1,7 +1,6 @@
 
 function Contacts({values,deleteContact,favouriteContacts}) {
   console.log(values);
-  
   return (
 
   <div className='col-sm-4' style={{display:'flex',justifyContent:'start', alignSelf:'start'}}>

@@ -22,11 +22,13 @@ return v.id !== id
   
   //favourite contact
   const favouriteContacts=(id)=>{
+   
     let favourite = contacts.map((value)=>{
      return value.id === id ?{...value,fav:!value.fav}:{value};
     })
     setContacts(favourite);
   }
+  
 
   return (
    <>
