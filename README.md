@@ -3,7 +3,7 @@
 * Improve the privacy of your contacts</p>
 
 <hr><h1>Maintainer</h1>
-<p>VIVIN KV <a href="https://www.github.com/vivinkv6">[https://www.github.com/vivinkv6]<a></p>
+<p>VIVIN KV <a href="https://www.github.com/vivinkv6">https://www.github.com/vivinkv6<a></p>
 
 <hr><h1>How it Works ?</h1>
 
