@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+
 import { useForm } from "react-hook-form";
 
 function Form({formSubmition}) {
@@ -13,7 +13,7 @@ function Form({formSubmition}) {
     return (
 
 
-        <form onSubmit={handleSubmit(onsubmit)} className="row col-sm-4 my-5 mt-5 border border-dark" style={{ display: 'flex', flexDirection: 'column' }}>
+        <form onSubmit={handleSubmit(onsubmit)} className="p-4 rounded row col-sm-4 my-5 mt-5 " style={{ display: 'flex', flexDirection: 'column',boxShadow:'0px 0px 20px black' }}>
             <h1 className='text-secondary text-center mt-3 mb-4'>Add Contacts</h1>
             <div className="col-md-10">
                 <div className='mb-3'>

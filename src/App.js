@@ -22,10 +22,10 @@ return v.id !== id
   
   //favourite contact
   const favouriteContacts=(id)=>{
-   
     let favourite = contacts.map((value)=>{
      return value.id === id ?{...value,fav:!value.fav}:{value};
     })
+
     setContacts(favourite);
   }
   
@@ -35,7 +35,7 @@ return v.id !== id
    <BrowserRouter>
    <NavBar/>
    <Routes>
-     <Route path="/" element={ <Home formSubmition={formSubmition} contacts={contacts} deleteContact={deleteContact} favouriteContacts={favouriteContacts} /> }/>
+     <Route path="/" element={ <Home formSubmition={formSubmition}  contacts={contacts} deleteContact={deleteContact} favouriteContacts={favouriteContacts} /> }/>
      <Route path="/favourite" element={<Favourite contacts={contacts} deleteContact={deleteContact} favouriteContacts={favouriteContacts} />} />  
      <Route path="*" element={<NotFound/>} />  
    </Routes>

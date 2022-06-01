@@ -1,5 +1,6 @@
 
 function Contacts({values,deleteContact,favouriteContacts}) {
+
   console.log(values);
   return (
 
@@ -12,8 +13,8 @@ function Contacts({values,deleteContact,favouriteContacts}) {
    <b>ID:</b> {values.id}
    </div>
    <div className='col-6' style={{textAlign:'center'}}>
-     <button type='button' onClick={()=>{deleteContact(values.id)}} className='bi bi-trash border-0 bg-0' style={{fontSize:'30px',marginLeft:'30px'}}></button>
-   <i onClick={()=>{favouriteContacts(values.id)}} className={values.fav? "fas fa-star text-warning":"far fa-star text-warning"} style={{fontSize:'30px',marginLeft:'20px'}}></i>
+     <button type='button' onClick={()=>{deleteContact(values.id)}}  className='fa-solid fa-trash-can border-0 bg-0' style={{fontSize:'30px',marginLeft:'30px'}}></button>
+   <i onClick={()=>{favouriteContacts(values.id)}} className={values.fav ?  "fas fa-star text-warning":"far fa-star text-warning"} style={{fontSize:'30px',marginLeft:'20px'}}></i>
    </div>
   </div>
   </div>
